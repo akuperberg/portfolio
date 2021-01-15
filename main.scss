@@ -1,0 +1,105 @@
+@use "components" as *;
+@use "general" as *;
+.me {
+    max-height: 35rem;
+    margin-top: 6rem;
+    border: 2px solid $semi-blue;
+}
+
+.navigation {
+    /*background-color: $semi-blue;*/
+    background-image: linear-gradient(to bottom, $dark-blue, $semi-blue);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 0.2rem;
+    .nav-item {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .nav-link {
+        color: $white;
+        letter-spacing: 0.2rem;
+        &:hover {
+            background-color: $pink;
+        }
+    }
+}
+
+.header {
+    color: $verydark-blue;
+    height: 60vh;
+    .hi {
+        @include headerStyle;
+        margin-bottom: 2rem;
+    }
+    .name {
+        @include headerStyle;
+        margin-bottom: 2rem;
+    }
+    .iamaadev {
+        @include headerStyle;
+    }
+    .anastasia {
+        font-weight: bold;
+    }
+    .web {
+        font-weight: bold;
+    }
+    .button {
+        background-color: $pink;
+        letter-spacing: 0.2rem;
+        color: $white;
+        font-size: 2rem;
+        font-weight: bold;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        border-radius: 2%;
+        margin-top: 3rem;
+        box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem $dark-pink;
+        text-transform: uppercase;
+        &:hover {
+            background-color: $light-blue;
+            color: $dark-pink;
+            box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem $dark-blue
+        }
+        &:active {
+            background-color: $verydark-blue;
+            color: $white;
+        }
+    }
+}
+
+.relat {
+    position: relative;
+}
+
+.vertical {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.about {
+    @include headingStyle;
+}
+
+.my-skills {
+    @include headingStyle;
+    font-size: 2.5rem;
+    margin-left: 3rem;
+}
+
+.contactme {
+    @include headingStyle;
+}
+
+.phone-icon {
+    @include iconStyle;
+}
+
+.email-icon {
+    @include iconStyle;
+}

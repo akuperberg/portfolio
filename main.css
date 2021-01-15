@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.body {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(to bottom right, #ffffff 0%, #f9f9f9 100%);
+  color: #224d51;
+}
+
+.me {
+  max-height: 35rem;
+  margin-top: 6rem;
+  border: 2px solid #68b3b8;
+}
+
+.navigation {
+  /*background-color: $semi-blue;*/
+  background-image: linear-gradient(to bottom, #388087, #68b3b8);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0.2rem;
+}
+.navigation .nav-item {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.navigation .nav-link {
+  color: white;
+  letter-spacing: 0.2rem;
+}
+.navigation .nav-link:hover {
+  background-color: #660D2B;
+}
+
+.header {
+  color: #224d51;
+  height: 60vh;
+}
+.header .hi {
+  display: block;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.header .name {
+  display: block;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.header .iamaadev {
+  display: block;
+  font-size: 4rem;
+}
+.header .anastasia {
+  font-weight: bold;
+}
+.header .web {
+  font-weight: bold;
+}
+.header .button {
+  background-color: #660D2B;
+  letter-spacing: 0.2rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  border-radius: 2%;
+  margin-top: 3rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #4d0a20;
+  text-transform: uppercase;
+}
+.header .button:hover {
+  background-color: #BADFE7;
+  color: #4d0a20;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #388087;
+}
+.header .button:active {
+  background-color: #224d51;
+  color: white;
+}
+
+.relat {
+  position: relative;
+}
+
+.vertical {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.about {
+  text-transform: uppercase;
+  color: #660D2B;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  font-size: 3.5rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.my-skills {
+  text-transform: uppercase;
+  color: #660D2B;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  font-size: 3.5rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-left: 3rem;
+}
+
+.contactme {
+  text-transform: uppercase;
+  color: #660D2B;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  font-size: 3.5rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.phone-icon {
+  color: #4d0a20;
+}
+
+.email-icon {
+  color: #4d0a20;
+}
+
+/*# sourceMappingURL=main.css.map */
