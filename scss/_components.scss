@@ -1,0 +1,29 @@
+$verydark-blue: #224d51;
+$dark-blue:#388087;
+$semi-blue: #68b3b8;
+$light-blue: #BADFE7;
+$green: #c2edce;
+$beige: #fcfcf2;
+$white: white;
+$gold: #ffcf40;
+$dark-gold: #bf9b30;
+$pink :#660D2B;
+$dark-pink: #4d0a20;
+@mixin headerStyle {
+    display: block;
+    font-size: 4rem;
+}
+
+@mixin headingStyle {
+    text-transform: uppercase;
+    color: $pink;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    font-size: 3.5rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+@mixin iconStyle {
+    color: $dark-pink;
+}
