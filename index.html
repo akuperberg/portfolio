@@ -4,23 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Anastasia Kuperberg</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body>
-    <div class="body">
+<body class="body">
 
 
+    <div class="container-fluid cont mx-0 px-0">
 
-        <div class="navigation">
+        <div class="back-img">
             <div class="row">
-                <div class="col-12">
-                    <ul class="nav justify-content-center">
+                <div class="col-md-12 col-lg-8">
+                    <ul class="nav navigation">
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Home</a>
                         </li>
@@ -28,123 +29,155 @@
                             <a class="nav-link" href="#">About me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">My projects</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
-            </div>
-        </div>
-        <div class="container-fluid px-0">
-            <div class="header">
-                <div class="row relat">
-                    <div class="col-6">
-                        <div class="vertical text-center">
-                            <h1><span class="hi">Hi!</span><span class="name"> My name is <span class="anastasia">Anastasia</span>.</span><span class="iamaadev">I am a <span class="web">front end </span>developer.</span>
-                            </h1>
-                            <a class="button-link" href="#aboutme"> <button type="button" class="btn button btn-lg">Learn more</button></a>
+
+                <div class=" col-md-12 offset-lg-2 col-lg-2 languages">
+                    <div class="dropdown language-dropdown-button">
+                        <button class="btn btn-outline-dark dropdown-toggle languages-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Language
+                            </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item english" href="#">English</a>
+                            <a class="dropdown-item czech" href="#">Czech</a>
+
                         </div>
                     </div>
-
-                    <div class="col-6 text-center">
-
-                        <img src="me.jpg" class="me rounded" alt="photo">
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-
-            <div class="row rowAboutMe">
-                <div class="col-12">
-                    <h2 class="about text-center my-4">About me</h2>
                 </div>
 
             </div>
 
-            <div class="row mx-2 my-2">
-                <div class="col-12">
-                    <p>I am a front end developer in the beginning of my career path. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci autem quia, voluptate quo accusamus eum facilis illum reprehenderit excepturi? Pariatur odit aspernatur
-                        at voluptates beatae nam recusandae consectetur commodi possimus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic optio voluptate ad accusantium nulla accusamus iure adipisci perferendis dolorem minus ipsam aspernatur
-                        esse, commodi quibusdam. Velit, blanditiis. Earum, veniam dolor!</p>
-                </div>
-            </div>
-
-
-            <div class="row justify-content-center">
-                <div class=" col-sm-12 col-md-4 col-lg-1 mx-3">
-                    <img src="html.png " class="img-fluid ">
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-1 ">
-                    <img src="css.png " class="img-fluid ">
-                </div>
-
-                <div class="col-sm-12 col-md-4 col-lg-1 mx-3 ">
-                    <img src="bootstrap.png " class="img-fluid ">
-                </div>
-
-                <div class="col-sm-12 col-md-4 col-lg-1 mx-3 ">
-                    <img src="sass.png " class="img-fluid ">
-                </div>
-
-            </div>
-
-            <div class="row mx-2 my-2">
-                <div class="col-12">
-                    <p>I am also passionate about UX and UI design.</p>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class=" col-sm-12 col-md-4 col-lg-1 mx-3">
-                    <img src="photoshop.png" class="img-fluid ">
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-1 ">
-                    <img src="figma.png " class="img-fluid ">
-                </div>
-            </div>
 
 
 
 
-            <div class="contact">
 
-                <div class="row">
+            <div class="row">
+                <div class="col-12 text-center d-flex justify-content-center introduction flex-column">
 
-                    <div class="col-12">
-                        <h2 class="contactme text-center my-4">Contact me</h2>
+                    <h1 class="introduction-h1 align-self-center"><span class="hello">Hi!</span> <span class="my-name">My name is <span class="anastasia">Anastasia</span></span> <span class="icreate">I create <span class="websites"> websites</span></span>
+                    </h1>
+                    <div class="divButton">
+                        <button href="#" type="button" class="btn btn-lg button-learn">Learn more</button>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-6">
-                        <span><i class="fa fa-phone fa-2x phone-icon"></i></span><span>+420 774 708 067</span>
-                    </div>
-
-                    <div class="col-6">
-                        <span><i class="fa fa-envelope fa-2x email-icon"></i>kuperberga@seznam.cz</span>
-                    </div>
-
-                </div>
-
-
-
-
             </div>
-
-
-
-
-
-
-
 
 
         </div>
+
+
+
+
+
+        <div class="row">
+            <div class="col-12 text-center about-me-section">
+                <h2 class="about-me-section-h">About me</h2>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="images/myphoto.png" class="picture-me">
+            </div>
+        </div>
+
+        <div class="row about-me">
+            <div class=" col-sm-0 col-md-1"></div>
+            <div class="col-sm-12 col-md-4 who-col">
+                <h3 class="who-h text-center">Who I am</h3>
+                <p class="who-p text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint hic ea eius optio atque ut corporis tenetur laudantium voluptatibus recusandae animi odio ipsum, illum natus molestias dolorum possimus dolore explicabo?Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Adipisci nemo maxime laudantium est saepe quo obcaecati voluptas, nostrum error quas eaque? Iusto nostrum voluptate asperiores autem quae magni deserunt aut?</p>
+            </div>
+            <div class="col-sm-0 col-md-2"></div>
+            <div class="col-sm-12 col-md-4 what-col">
+                <h3 class="what-h text-center">What I do</h3>
+                <p class="what-p text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At delectus magnam voluptates, porro eaque facilis quibusdam atque, amet sequi esse odio deserunt officiis adipisci libero consequuntur est temporibus nihil nisi?Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Rem ab aliquam repellendus nemo, adipisci dolorum quos optio a ratione, ipsam deleniti animi magni. Numquam officia nemo minus tempora ratione. Quo?</p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <div class="contact-me">
+            <div class="back-img-contact">
+
+
+                <div class="row row-icons">
+                    <div class="col-12 col-icons">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="contact text-center">Contact me</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="text-center call-find">Call or send a message:</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="offset-lg-2 col-md-12 col-lg-4">
+                                <a href="#" class="phone-a text-center"><i class="fa fa-2x fa-phone phone-icon"></i> <span class="phone">+420 774 708 067</span></a>
+                            </div>
+                            <div class="col-md-12 col-lg-4"> <a href="#" class="mail-a text-center"><i class="fa fa-2x fa-envelope mail-icon"></i><span class="mail">kuperberga@seznam.cz</span></a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="text-center call-find">Find me on social networks:</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="offset-lg-2 col-md-12 col-lg-2"><a href="#" class="insta-a text-center"><i class="fa fa-2x fa-instagram insta-icon"></i><span class="instagram">akuperberg</span></a></div>
+                            <div class="col-md-12 col-lg-3"><a href="#" class="github-a text-center"><i class="fa fa-2x fa-github github-icon"></i><span class="github">akuperberg</span></a></div>
+                            <div class="col-md-12 col-lg-3"><a href="#" class="linkedin-a text-center"><i class="fa fa-2x fa-linkedin linkedin-icon"></i><span class="linkedin">linkedin.com/in/anastasia-kuperberg</span></a></div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12">
+                        <h3 class="text-center call-find">For more information <a href="#" class="cv">download my CV</a></h3>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
 
     </div>
 
@@ -155,9 +188,41 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js " integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut " crossorigin="anonymous "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js " integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k " crossorigin="anonymous "></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,104 +1,214 @@
-@use "components" as *;
-@use "general" as *;
-.me {
-    max-height: 35rem;
-    margin-top: 6rem;
-    border: 2px solid $semi-blue;
+@use 'base.scss' as *;
+@use 'components.scss' as *;
+.back-img {
+    background-image: linear-gradient( to right bottom, rgba($tobacco-light, 0.9), rgba($tobacco-dark, 0.9)), url(../images/computer.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.language-dropdown-button {
+    outline: none;
+    .languages-button {
+        padding: 0.5rem 2rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $ebony;
+        letter-spacing: 0.1rem;
+        margin-top: 4rem;
+    }
+    .english {
+        @include languages;
+    }
+    .czech {
+        @include languages;
+    }
+}
+
+.introduction {
+    height: 80vh;
+    .introduction-h1 {
+        color: black;
+        font-size: 6rem;
+        letter-spacing: 0.5rem;
+        @media only screen and (max-width: 600px) {
+            font-size: 2rem;
+        }
+    }
+    .hello {
+        @include headerStyles;
+    }
+    .my-name {
+        @include headerStyles;
+        .anastasia {
+            @include headerWords;
+        }
+    }
+    .icreate {
+        @include headerStyles;
+        .websites {
+            @include headerWords;
+        }
+    }
+    .button-learn {
+        padding: 1rem 4rem;
+        font-size: 2rem;
+        @include button;
+        color: $white;
+    }
+    .button-learn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+        background-color: $dark-red;
+        color: $white;
+    }
+    .button-learn:active {
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        background-color: $dark-red;
+        color: $white;
+    }
 }
 
 .navigation {
-    /*background-color: $semi-blue;*/
-    background-image: linear-gradient(to bottom, $dark-blue, $semi-blue);
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 2rem;
-    padding: 0.2rem;
-    .nav-item {
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
-    .nav-link {
-        color: $white;
-        letter-spacing: 0.2rem;
-        &:hover {
-            background-color: $pink;
-        }
-    }
-}
-
-.header {
-    color: $verydark-blue;
-    .hi {
-        @include headerStyle;
-        margin-bottom: 2rem;
-    }
-    .name {
-        @include headerStyle;
-        margin-bottom: 2rem;
-    }
-    .iamaadev {
-        @include headerStyle;
-    }
-    .anastasia {
-        font-weight: bold;
-    }
-    .web {
-        font-weight: bold;
-    }
-    .button {
-        background-color: $pink;
-        letter-spacing: 0.2rem;
-        color: $white;
-        font-size: 2rem;
-        font-weight: bold;
-        padding-left: 4rem;
-        padding-right: 4rem;
-        border-radius: 2%;
-        margin-top: 3rem;
-        box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem $dark-pink;
-        text-transform: uppercase;
-        &:hover {
-            background-color: $light-blue;
-            color: $dark-pink;
-            box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem $dark-blue
-        }
-        &:active {
-            background-color: $verydark-blue;
-            color: $white;
-        }
-    }
-}
-
-.relat {
-    position: relative;
-}
-
-.vertical {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-}
-
-.about {
-    @include headingStyle;
-}
-
-.my-skills {
-    @include headingStyle;
     font-size: 2.5rem;
-    margin-left: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    padding-top: 2rem;
+    .nav-item {
+        padding: 0.5rem 4rem;
+        .nav-link {
+            color: $section-red;
+            &:hover {
+                color: $color-blue;
+                text-decoration-line: underline;
+                text-underline-offset: 2rem;
+            }
+        }
+    }
 }
 
-.contactme {
-    @include headingStyle;
+.picture-me {
+    height: 20rem;
 }
 
-.phone-icon {
-    @include iconStyle;
+.about-me {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    .btn-cv {
+        @include button;
+    }
 }
 
-.email-icon {
-    @include iconStyle;
+.about-me-section-h {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    @include headerSecondary;
+}
+
+.who-h {
+    @include who;
+}
+
+.what-h {
+    @include who;
+}
+
+.who-p {
+    @include who-p;
+}
+
+.what-p {
+    @include who-p;
+}
+
+.button-cv {
+    background-color: $section-red;
+}
+
+.contact-me {
+    height: 80vh;
+    padding: 1rem;
+    .contact {
+        @include headerSecondary;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+    .call-find {
+        font-size: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+    .phone-a {
+        @include a-contacts;
+        .phone-icon {
+            color: $section-red;
+            ;
+        }
+        .phone {
+            @include iconSpanStyle;
+        }
+    }
+    .insta-a {
+        @include a-contacts;
+        .insta-icon {
+            color: $section-red;
+        }
+        .instagram {
+            @include iconSpanStyle;
+        }
+    }
+    .mail-a {
+        @include a-contacts;
+        .mail-icon {
+            color: $section-red;
+        }
+        .mail {
+            @include iconSpanStyle;
+        }
+    }
+    .github-a {
+        @include a-contacts;
+        .github-icon {
+            color: $section-red;
+        }
+        .github {
+            @include iconSpanStyle;
+        }
+    }
+    .linkedin-a {
+        @include a-contacts;
+        .linkedin-icon {
+            color: $section-red;
+        }
+        .linkedin {
+            @include iconSpanStyle;
+        }
+    }
+    .cv {
+        color: $color-blue;
+        font-weight: bold;
+        &:hover {
+            text-decoration-line: underline;
+            text-underline-offset: 1.5rem;
+        }
+    }
+}
+
+.col-icons {
+    padding-top: 6rem;
+}
+
+.back-img-contact {
+    background-image: linear-gradient( to bottom, rgba($tobacco-light, 0.85), rgba($tobacco-dark, 0.85)), url(../images/contact-computer.jpg);
+    background-repeat: no-repeat;
+    background-size: 65% 100%;
+    background-position: center;
+}
+
+.row-contact {
+    padding-left: 20rem;
+    padding-right: 20rem;
+    height: 20vh;
 }

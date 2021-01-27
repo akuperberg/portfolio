@@ -1,12 +1,11 @@
 {
-    "name": "portfo-page",
+    "name": "potfolio-version2",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
         "watch": "sass --watch scss/main.scss css/main.css"
     },
-    "keywords": [],
     "author": "",
     "license": "ISC"
 }

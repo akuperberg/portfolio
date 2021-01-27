@@ -10,133 +10,367 @@ html {
 
 .body {
   font-size: 2rem;
-  font-family: "Montserrat", sans-serif;
-  background: linear-gradient(to bottom right, #ffffff 0%, #f9f9f9 100%);
-  color: #224d51;
+  font-family: "Lato", sans-serif;
+  background-color: rgba(225, 230, 238, 0.5);
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-.me {
-  max-height: 35rem;
-  margin-top: 6rem;
-  border: 2px solid #68b3b8;
+.back-img {
+  background-image: linear-gradient(to right bottom, rgba(245, 247, 250, 0.9), rgba(184, 198, 219, 0.9)), url(../images/computer.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.language-dropdown-button {
+  outline: none;
+}
+.language-dropdown-button .languages-button {
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #1e272c;
+  letter-spacing: 0.1rem;
+  margin-top: 4rem;
+}
+.language-dropdown-button .english {
+  font-size: 1.5rem;
+}
+.language-dropdown-button .english:active {
+  background-color: #e1e6ee;
+  color: #1e272c;
+}
+.language-dropdown-button .czech {
+  font-size: 1.5rem;
+}
+.language-dropdown-button .czech:active {
+  background-color: #e1e6ee;
+  color: #1e272c;
+}
+
+.introduction {
+  height: 80vh;
+}
+.introduction .introduction-h1 {
+  color: black;
+  font-size: 6rem;
+  letter-spacing: 0.5rem;
+}
+@media only screen and (max-width: 600px) {
+  .introduction .introduction-h1 {
+    font-size: 2rem;
+  }
+}
+.introduction .hello {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #1e272c;
+}
+.introduction .my-name {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #1e272c;
+}
+.introduction .my-name .anastasia {
+  color: #00a3a3;
+  font-weight: bold;
+}
+.introduction .icreate {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #1e272c;
+}
+.introduction .icreate .websites {
+  color: #00a3a3;
+  font-weight: bold;
+}
+.introduction .button-learn {
+  padding: 1rem 4rem;
+  font-size: 2rem;
+  background-color: #A30000;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 10rem;
+  letter-spacing: 0.1rem;
+  color: #f0f0f0;
+}
+.introduction .button-learn:hover {
+  background-color: #570000;
+}
+.introduction .button-learn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  background-color: #750000;
+  color: #f0f0f0;
+}
+.introduction .button-learn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  background-color: #750000;
+  color: #f0f0f0;
 }
 
 .navigation {
-  /*background-color: $semi-blue;*/
-  background-image: linear-gradient(to bottom, #388087, #68b3b8);
+  font-size: 2.5rem;
   text-transform: uppercase;
+  letter-spacing: 0.1rem;
   font-weight: bold;
-  font-size: 2rem;
-  padding: 0.2rem;
+  padding-top: 2rem;
 }
 .navigation .nav-item {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding: 0.5rem 4rem;
 }
-.navigation .nav-link {
-  color: white;
-  letter-spacing: 0.2rem;
+.navigation .nav-item .nav-link {
+  color: #A30000;
 }
-.navigation .nav-link:hover {
-  background-color: #660D2B;
+.navigation .nav-item .nav-link:hover {
+  color: #00a3a3;
+  text-decoration-line: underline;
+  text-underline-offset: 2rem;
 }
 
-.header {
-  color: #224d51;
+.picture-me {
+  height: 20rem;
 }
-.header .hi {
-  display: block;
-  font-size: 4rem;
-  margin-bottom: 2rem;
+
+.about-me {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
-.header .name {
-  display: block;
-  font-size: 4rem;
-  margin-bottom: 2rem;
-}
-.header .iamaadev {
-  display: block;
-  font-size: 4rem;
-}
-.header .anastasia {
+.about-me .btn-cv {
+  background-color: #A30000;
+  border: 0;
+  text-transform: uppercase;
   font-weight: bold;
+  border-radius: 10rem;
+  letter-spacing: 0.1rem;
 }
-.header .web {
+.about-me .btn-cv:hover {
+  background-color: #570000;
+}
+
+.about-me-section-h {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  font-size: 6rem;
+  color: #A30000;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+.who-h {
+  border-top: 0.5rem #00a3a3 solid;
+  border-bottom: 0.5rem #00a3a3 solid;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  color: #00a3a3;
   font-weight: bold;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
 }
-.header .button {
-  background-color: #660D2B;
-  letter-spacing: 0.2rem;
-  color: white;
+
+.what-h {
+  border-top: 0.5rem #00a3a3 solid;
+  border-bottom: 0.5rem #00a3a3 solid;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  color: #00a3a3;
+  font-weight: bold;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.who-p {
+  margin-top: 2.5rem;
+  line-height: 150%;
+  font-size: 2.2rem;
+  color: #1e272c;
+}
+
+.what-p {
+  margin-top: 2.5rem;
+  line-height: 150%;
+  font-size: 2.2rem;
+  color: #1e272c;
+}
+
+.button-cv {
+  background-color: #A30000;
+}
+
+.contact-me {
+  height: 80vh;
+  padding: 1rem;
+}
+.contact-me .contact {
+  font-size: 6rem;
+  color: #A30000;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+.contact-me .call-find {
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.contact-me .phone-a {
+  display: block;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-left: 5rem;
+}
+.contact-me .phone-a:hover {
+  text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  .contact-me .phone-a {
+    margin-left: 2rem;
+  }
+}
+.contact-me .phone-a .phone-icon {
+  color: #A30000;
+}
+.contact-me .phone-a .phone {
   font-size: 2rem;
+  margin-left: 1rem;
+  color: #1e272c;
+}
+.contact-me .phone-a .phone:hover {
+  color: #A30000;
+}
+.contact-me .insta-a {
+  display: block;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-left: 5rem;
+}
+.contact-me .insta-a:hover {
+  text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  .contact-me .insta-a {
+    margin-left: 2rem;
+  }
+}
+.contact-me .insta-a .insta-icon {
+  color: #A30000;
+}
+.contact-me .insta-a .instagram {
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: #1e272c;
+}
+.contact-me .insta-a .instagram:hover {
+  color: #A30000;
+}
+.contact-me .mail-a {
+  display: block;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-left: 5rem;
+}
+.contact-me .mail-a:hover {
+  text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  .contact-me .mail-a {
+    margin-left: 2rem;
+  }
+}
+.contact-me .mail-a .mail-icon {
+  color: #A30000;
+}
+.contact-me .mail-a .mail {
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: #1e272c;
+}
+.contact-me .mail-a .mail:hover {
+  color: #A30000;
+}
+.contact-me .github-a {
+  display: block;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-left: 5rem;
+}
+.contact-me .github-a:hover {
+  text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  .contact-me .github-a {
+    margin-left: 2rem;
+  }
+}
+.contact-me .github-a .github-icon {
+  color: #A30000;
+}
+.contact-me .github-a .github {
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: #1e272c;
+}
+.contact-me .github-a .github:hover {
+  color: #A30000;
+}
+.contact-me .linkedin-a {
+  display: block;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-left: 5rem;
+}
+.contact-me .linkedin-a:hover {
+  text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  .contact-me .linkedin-a {
+    margin-left: 2rem;
+  }
+}
+.contact-me .linkedin-a .linkedin-icon {
+  color: #A30000;
+}
+.contact-me .linkedin-a .linkedin {
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: #1e272c;
+}
+.contact-me .linkedin-a .linkedin:hover {
+  color: #A30000;
+}
+.contact-me .cv {
+  color: #00a3a3;
   font-weight: bold;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  border-radius: 2%;
-  margin-top: 3rem;
-  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #4d0a20;
-  text-transform: uppercase;
 }
-.header .button:hover {
-  background-color: #BADFE7;
-  color: #4d0a20;
-  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #388087;
-}
-.header .button:active {
-  background-color: #224d51;
-  color: white;
+.contact-me .cv:hover {
+  text-decoration-line: underline;
+  text-underline-offset: 1.5rem;
 }
 
-.relat {
-  position: relative;
+.col-icons {
+  padding-top: 6rem;
 }
 
-.vertical {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+.back-img-contact {
+  background-image: linear-gradient(to bottom, rgba(245, 247, 250, 0.85), rgba(184, 198, 219, 0.85)), url(../images/contact-computer.jpg);
+  background-repeat: no-repeat;
+  background-size: 65% 100%;
+  background-position: center;
 }
 
-.about {
-  text-transform: uppercase;
-  color: #660D2B;
-  font-weight: bold;
-  letter-spacing: 0.2rem;
-  font-size: 3.5rem;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
-}
-
-.my-skills {
-  text-transform: uppercase;
-  color: #660D2B;
-  font-weight: bold;
-  letter-spacing: 0.2rem;
-  font-size: 3.5rem;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
-  font-size: 2.5rem;
-  margin-left: 3rem;
-}
-
-.contactme {
-  text-transform: uppercase;
-  color: #660D2B;
-  font-weight: bold;
-  letter-spacing: 0.2rem;
-  font-size: 3.5rem;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
-}
-
-.phone-icon {
-  color: #4d0a20;
-}
-
-.email-icon {
-  color: #4d0a20;
+.row-contact {
+  padding-left: 20rem;
+  padding-right: 20rem;
+  height: 20vh;
 }
 
 /*# sourceMappingURL=main.css.map */
