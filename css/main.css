@@ -34,12 +34,10 @@ html {
   letter-spacing: 0.1rem;
   margin-top: 4rem;
 }
-.language-dropdown-button .english {
-  font-size: 1.5rem;
-}
-.language-dropdown-button .english:active {
-  background-color: #e1e6ee;
-  color: #1e272c;
+@media only screen and (max-width: 1040px) {
+  .language-dropdown-button .languages-button {
+    display: none;
+  }
 }
 .language-dropdown-button .czech {
   font-size: 1.5rem;
@@ -49,8 +47,42 @@ html {
   color: #1e272c;
 }
 
+.lang-mobile {
+  margin: 3rem;
+  font-size: 1.2rem;
+}
+.lang-mobile-l {
+  margin: 1rem;
+  color: #00a3a3;
+}
+@media only screen and (max-width: 600px) {
+  .lang-mobile-l {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 1040px) {
+  .lang-mobile-l {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-width: 1040px) {
+  .lang-mobile {
+    display: none;
+  }
+}
+
 .introduction {
   height: 80vh;
+}
+@media only screen and (max-width: 600px) {
+  .introduction {
+    height: 30vh;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .introduction {
+    height: 40vh;
+  }
 }
 .introduction .introduction-h1 {
   color: black;
@@ -59,7 +91,14 @@ html {
 }
 @media only screen and (max-width: 600px) {
   .introduction .introduction-h1 {
-    font-size: 2rem;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .introduction .introduction-h1 {
+    font-size: 5rem;
+    letter-spacing: 0.2rem;
   }
 }
 .introduction .hello {
@@ -68,11 +107,21 @@ html {
   margin-bottom: 2rem;
   color: #1e272c;
 }
+@media only screen and (max-width: 600px) {
+  .introduction .hello {
+    display: inline-block;
+  }
+}
 .introduction .my-name {
   display: block;
   margin-top: 2rem;
   margin-bottom: 2rem;
   color: #1e272c;
+}
+@media only screen and (max-width: 600px) {
+  .introduction .my-name {
+    display: inline-block;
+  }
 }
 .introduction .my-name .anastasia {
   color: #00a3a3;
@@ -84,6 +133,11 @@ html {
   margin-bottom: 2rem;
   color: #1e272c;
 }
+@media only screen and (max-width: 600px) {
+  .introduction .icreate {
+    display: inline-block;
+  }
+}
 .introduction .icreate .websites {
   color: #00a3a3;
   font-weight: bold;
@@ -91,16 +145,21 @@ html {
 .introduction .button-learn {
   padding: 1rem 4rem;
   font-size: 2rem;
-  background-color: #A30000;
+  background-color: #a30000;
   border: 0;
   text-transform: uppercase;
   font-weight: bold;
-  border-radius: 10rem;
+  border-radius: 3rem;
   letter-spacing: 0.1rem;
   color: #f0f0f0;
 }
 .introduction .button-learn:hover {
   background-color: #570000;
+}
+@media only screen and (max-width: 1040px) {
+  .introduction .button-learn {
+    display: none;
+  }
 }
 .introduction .button-learn:hover {
   transform: translateY(-3px);
@@ -122,11 +181,29 @@ html {
   font-weight: bold;
   padding-top: 2rem;
 }
+@media only screen and (max-width: 600px) {
+  .navigation {
+    font-size: 1.5rem;
+    letter-spacing: 0.08rem;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .navigation {
+    font-size: 2.2rem;
+    letter-spacing: 0.08rem;
+  }
+}
 .navigation .nav-item {
   padding: 0.5rem 4rem;
 }
+@media only screen and (max-width: 600px) {
+  .navigation .nav-item {
+    padding: 0.5rem 1rem;
+  }
+}
 .navigation .nav-item .nav-link {
-  color: #A30000;
+  color: #a30000;
 }
 .navigation .nav-item .nav-link:hover {
   color: #00a3a3;
@@ -143,11 +220,11 @@ html {
   margin-bottom: 6rem;
 }
 .about-me .btn-cv {
-  background-color: #A30000;
+  background-color: #a30000;
   border: 0;
   text-transform: uppercase;
   font-weight: bold;
-  border-radius: 10rem;
+  border-radius: 3rem;
   letter-spacing: 0.1rem;
 }
 .about-me .btn-cv:hover {
@@ -156,11 +233,16 @@ html {
 
 .about-me-section-h {
   margin-top: 6rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   font-size: 6rem;
-  color: #A30000;
+  color: #a30000;
   letter-spacing: 0.5rem;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 600px) {
+  .about-me-section-h {
+    font-size: 4rem;
+  }
 }
 
 .who-h {
@@ -174,6 +256,12 @@ html {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
 }
+@media only screen and (max-width: 1400px) {
+  .who-h {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
 
 .what-h {
   border-top: 0.5rem #00a3a3 solid;
@@ -186,12 +274,24 @@ html {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
 }
+@media only screen and (max-width: 1400px) {
+  .what-h {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
 
 .who-p {
   margin-top: 2.5rem;
   line-height: 150%;
   font-size: 2.2rem;
   color: #1e272c;
+}
+@media only screen and (max-width: 1024px) {
+  .who-p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
 
 .what-p {
@@ -200,27 +300,63 @@ html {
   font-size: 2.2rem;
   color: #1e272c;
 }
+@media only screen and (max-width: 1024px) {
+  .what-p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
 
-.button-cv {
-  background-color: #A30000;
+.cv {
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+.cv .cv-a {
+  color: #00a3a3;
+  font-weight: bold;
+}
+.cv .cv-a:hover {
+  text-decoration-line: underline;
+  text-underline-offset: 1.5rem;
 }
 
 .contact-me {
-  height: 80vh;
   padding: 1rem;
+  background-image: linear-gradient(to bottom, rgba(245, 247, 250, 0.85), rgba(184, 198, 219, 0.85)), url(../images/contact-computer.jpg);
+  background-repeat: no-repeat;
+  background-size: 90% auto;
+  background-position: center;
+  margin-top: 3rem;
+}
+@media only screen and (max-width: 1024px) {
+  .contact-me {
+    background-image: linear-gradient(to bottom, rgba(245, 247, 250, 0.85), rgba(184, 198, 219, 0.85));
+    background-size: 100% auto;
+  }
 }
 .contact-me .contact {
   font-size: 6rem;
-  color: #A30000;
+  color: #a30000;
   letter-spacing: 0.5rem;
   text-transform: uppercase;
-  margin-top: 1rem;
+  margin-top: 3rem;
   margin-bottom: 4rem;
+}
+@media only screen and (max-width: 600px) {
+  .contact-me .contact {
+    font-size: 4rem;
+  }
 }
 .contact-me .call-find {
   font-size: 3rem;
   margin-top: 2rem;
   margin-bottom: 4rem;
+}
+@media only screen and (max-width: 600px) {
+  .contact-me .call-find {
+    text-align: center;
+  }
 }
 .contact-me .phone-a {
   display: block;
@@ -237,15 +373,16 @@ html {
   }
 }
 .contact-me .phone-a .phone-icon {
-  color: #A30000;
+  color: #a30000;
 }
 .contact-me .phone-a .phone {
   font-size: 2rem;
   margin-left: 1rem;
   color: #1e272c;
+  display: block;
 }
 .contact-me .phone-a .phone:hover {
-  color: #A30000;
+  color: #a30000;
 }
 .contact-me .insta-a {
   display: block;
@@ -262,15 +399,16 @@ html {
   }
 }
 .contact-me .insta-a .insta-icon {
-  color: #A30000;
+  color: #a30000;
 }
 .contact-me .insta-a .instagram {
   font-size: 2rem;
   margin-left: 1rem;
   color: #1e272c;
+  display: block;
 }
 .contact-me .insta-a .instagram:hover {
-  color: #A30000;
+  color: #a30000;
 }
 .contact-me .mail-a {
   display: block;
@@ -287,15 +425,16 @@ html {
   }
 }
 .contact-me .mail-a .mail-icon {
-  color: #A30000;
+  color: #a30000;
 }
 .contact-me .mail-a .mail {
   font-size: 2rem;
   margin-left: 1rem;
   color: #1e272c;
+  display: block;
 }
 .contact-me .mail-a .mail:hover {
-  color: #A30000;
+  color: #a30000;
 }
 .contact-me .github-a {
   display: block;
@@ -312,15 +451,16 @@ html {
   }
 }
 .contact-me .github-a .github-icon {
-  color: #A30000;
+  color: #a30000;
 }
 .contact-me .github-a .github {
   font-size: 2rem;
   margin-left: 1rem;
   color: #1e272c;
+  display: block;
 }
 .contact-me .github-a .github:hover {
-  color: #A30000;
+  color: #a30000;
 }
 .contact-me .linkedin-a {
   display: block;
@@ -337,40 +477,99 @@ html {
   }
 }
 .contact-me .linkedin-a .linkedin-icon {
-  color: #A30000;
+  color: #a30000;
 }
 .contact-me .linkedin-a .linkedin {
   font-size: 2rem;
   margin-left: 1rem;
   color: #1e272c;
+  display: block;
 }
 .contact-me .linkedin-a .linkedin:hover {
-  color: #A30000;
+  color: #a30000;
 }
-.contact-me .cv {
-  color: #00a3a3;
-  font-weight: bold;
-}
-.contact-me .cv:hover {
-  text-decoration-line: underline;
-  text-underline-offset: 1.5rem;
-}
-
-.col-icons {
+.contact-me .col-icons {
   padding-top: 6rem;
 }
-
-.back-img-contact {
-  background-image: linear-gradient(to bottom, rgba(245, 247, 250, 0.85), rgba(184, 198, 219, 0.85)), url(../images/contact-computer.jpg);
-  background-repeat: no-repeat;
-  background-size: 65% 100%;
-  background-position: center;
-}
-
-.row-contact {
+.contact-me .row-contact {
   padding-left: 20rem;
   padding-right: 20rem;
   height: 20vh;
+}
+.contact-me .label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 1024px) {
+  .contact-me .label {
+    text-align: center;
+  }
+}
+.contact-me .field {
+  display: block;
+  width: 60%;
+  border: #1e272c 0.8px;
+  background-color: #f5f7fa;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+@media only screen and (max-width: 1024px) {
+  .contact-me .field {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.contact-me input[placeholder] {
+  color: #1e272c;
+  font-size: 1.8rem;
+}
+.contact-me #message {
+  resize: none;
+  font-size: 1.5rem;
+}
+.contact-me .submit-button {
+  background-color: #00a3a3;
+  padding: 0.8rem 3rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  color: #f0f0f0;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+.contact-me .submit-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  background-color: #0088a3;
+  color: #f0f0f0;
+}
+.contact-me .submit-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  background-color: #0088a3;
+  color: #f0f0f0;
+}
+
+#mistakeFirstName {
+  color: #00a3a3;
+  font-weight: bold;
+}
+
+#mistakeSurname {
+  color: #00a3a3;
+  font-weight: bold;
+}
+
+#mistakeEmail {
+  color: #00a3a3;
+  font-weight: bold;
+}
+
+#mistakeMessage {
+  color: #00a3a3;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */

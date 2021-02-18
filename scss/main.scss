@@ -16,23 +16,52 @@
         color: $ebony;
         letter-spacing: 0.1rem;
         margin-top: 4rem;
-    }
-    .english {
-        @include languages;
+        @media only screen and (max-width: 1040px) {
+            display: none;
+        }
     }
     .czech {
         @include languages;
     }
 }
 
+.lang-mobile {
+    margin: 3rem;
+    font-size: 1.2rem;
+    &-l {
+        margin: 1rem;
+        color: $color-blue;
+        @media only screen and (max-width: 600px) {
+            font-size: 1.2rem;
+        }
+        @media only screen and (max-width: 1040px) {
+            font-size: 1.6rem;
+        }
+    }
+    @media only screen and (min-width: 1040px) {
+        display: none;
+    }
+}
+
 .introduction {
     height: 80vh;
+    @media only screen and (max-width: 600px) {
+        height: 30vh;
+    }
+    @media only screen and (min-width: 600px) and (max-width: 1024px) {
+        height: 40vh;
+    }
     .introduction-h1 {
         color: black;
         font-size: 6rem;
         letter-spacing: 0.5rem;
         @media only screen and (max-width: 600px) {
-            font-size: 2rem;
+            font-size: 3rem;
+            letter-spacing: 0.1rem;
+        }
+        @media only screen and (min-width: 600px) and (max-width: 1024px) {
+            font-size: 5rem;
+            letter-spacing: 0.2rem;
         }
     }
     .hello {
@@ -55,6 +84,9 @@
         font-size: 2rem;
         @include button;
         color: $white;
+        @media only screen and (max-width: 1040px) {
+            display: none;
+        }
     }
     .button-learn:hover {
         transform: translateY(-3px);
@@ -76,8 +108,20 @@
     letter-spacing: 0.1rem;
     font-weight: bold;
     padding-top: 2rem;
+    @media only screen and (max-width: 600px) {
+        font-size: 1.5rem;
+        letter-spacing: 0.08rem;
+        justify-content: center;
+    }
+    @media only screen and (min-width: 600px) and (max-width: 1024px) {
+        font-size: 2.2rem;
+        letter-spacing: 0.08rem;
+    }
     .nav-item {
         padding: 0.5rem 4rem;
+        @media only screen and (max-width: 600px) {
+            padding: 0.5rem 1rem;
+        }
         .nav-link {
             color: $section-red;
             &:hover {
@@ -103,7 +147,7 @@
 
 .about-me-section-h {
     margin-top: 6rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     @include headerSecondary;
 }
 
@@ -117,34 +161,62 @@
 
 .who-p {
     @include who-p;
+    @media only screen and (max-width: 1024px) {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 }
 
 .what-p {
     @include who-p;
+    @media only screen and (max-width: 1024px) {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 }
 
-.button-cv {
-    background-color: $section-red;
+.cv {
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    .cv-a {
+        color: $color-blue;
+        font-weight: bold;
+        &:hover {
+            text-decoration-line: underline;
+            text-underline-offset: 1.5rem;
+        }
+    }
 }
 
 .contact-me {
-    height: 80vh;
     padding: 1rem;
+    background-image: linear-gradient( to bottom, rgba($tobacco-light, 0.85), rgba($tobacco-dark, 0.85)), url(../images/contact-computer.jpg);
+    background-repeat: no-repeat;
+    background-size: 90% auto;
+    background-position: center;
+    @media only screen and (max-width: 1024px) {
+        background-image: linear-gradient( to bottom, rgba($tobacco-light, 0.85), rgba($tobacco-dark, 0.85));
+        background-size: 100% auto;
+    }
+    margin-top: 3rem;
     .contact {
         @include headerSecondary;
-        margin-top: 1rem;
+        margin-top: 3rem;
         margin-bottom: 4rem;
     }
     .call-find {
         font-size: 3rem;
         margin-top: 2rem;
         margin-bottom: 4rem;
+        @media only screen and (max-width: 600px) {
+            text-align: center;
+        }
     }
     .phone-a {
         @include a-contacts;
         .phone-icon {
             color: $section-red;
-            ;
         }
         .phone {
             @include iconSpanStyle;
@@ -186,29 +258,79 @@
             @include iconSpanStyle;
         }
     }
-    .cv {
-        color: $color-blue;
+    .col-icons {
+        padding-top: 6rem;
+    }
+    .row-contact {
+        padding-left: 20rem;
+        padding-right: 20rem;
+        height: 20vh;
+    }
+    .label {
+        display: block;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        @media only screen and (max-width: 1024px) {
+            text-align: center;
+        }
+    }
+    .field {
+        display: block;
+        width: 60%;
+        border: $ebony 0.8px;
+        background-color: $tobacco-light;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        @media only screen and (max-width: 1024px) {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+    input[placeholder] {
+        color: $ebony;
+        font-size: 1.8rem;
+    }
+    #message {
+        resize: none;
+        font-size: 1.5rem;
+    }
+    .submit-button {
+        background-color: $color-blue;
+        padding: 0.8rem 3rem;
+        font-size: 1.5rem;
+        border-radius: 0.5rem;
+        color: $white;
+        margin-top: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
         font-weight: bold;
         &:hover {
-            text-decoration-line: underline;
-            text-underline-offset: 1.5rem;
+            transform: translateY(-3px);
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+            background-color: $dark-blue;
+            color: $white;
+        }
+        &:active {
+            transform: translateY(-1px);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            background-color: $dark-blue;
+            color: $white;
         }
     }
 }
 
-.col-icons {
-    padding-top: 6rem;
+#mistakeFirstName {
+    @include mistakes;
 }
 
-.back-img-contact {
-    background-image: linear-gradient( to bottom, rgba($tobacco-light, 0.85), rgba($tobacco-dark, 0.85)), url(../images/contact-computer.jpg);
-    background-repeat: no-repeat;
-    background-size: 65% 100%;
-    background-position: center;
+#mistakeSurname {
+    @include mistakes;
 }
 
-.row-contact {
-    padding-left: 20rem;
-    padding-right: 20rem;
-    height: 20vh;
+#mistakeEmail {
+    @include mistakes;
+}
+
+#mistakeMessage {
+    @include mistakes;
 }
