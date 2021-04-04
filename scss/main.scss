@@ -146,8 +146,8 @@
 }
 
 .about-me-section-h {
-    margin-top: 6rem;
-    margin-bottom: 1rem;
+    margin-top: 10rem;
+    margin-bottom: 6rem;
     @include headerSecondary;
 }
 
@@ -189,8 +189,39 @@
     }
 }
 
+.contact-details {
+    @media only screen and (min-width: 1024px) {
+        margin-left: 12rem;
+    }
+}
+
+.phone-mail {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.networks {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.callorsend {
+    margin-top: 3rem;
+    margin-left: 21rem;
+}
+
+.h-networks {
+    margin-left: 18rem;
+}
+
+.leaveyourcontact {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 2.5rem;
+}
+
 .contact-me {
-    padding: 1rem;
+    padding-bottom: 4rem;
     background-image: linear-gradient( to bottom, rgba($tobacco-light, 0.85), rgba($tobacco-dark, 0.85)), url(../images/contact-computer.jpg);
     background-repeat: no-repeat;
     background-size: 90% auto;
@@ -202,13 +233,11 @@
     margin-top: 3rem;
     .contact {
         @include headerSecondary;
-        margin-top: 3rem;
+        margin-top: 4rem;
         margin-bottom: 4rem;
     }
     .call-find {
         font-size: 3rem;
-        margin-top: 2rem;
-        margin-bottom: 4rem;
         @media only screen and (max-width: 600px) {
             text-align: center;
         }
@@ -260,6 +289,7 @@
     }
     .col-icons {
         padding-top: 6rem;
+        margin-left: 3rem;
     }
     .row-contact {
         padding-left: 20rem;
@@ -276,13 +306,13 @@
     }
     .field {
         display: block;
-        width: 60%;
+        width: 80%;
         border: $ebony 0.8px;
         background-color: $tobacco-light;
         padding: 0.5rem 1rem;
         border-radius: 0.5rem;
         @media only screen and (max-width: 1024px) {
-            width: 90%;
+            width: 80%;
             margin: 0 auto;
         }
     }
@@ -296,11 +326,11 @@
     }
     .submit-button {
         background-color: $color-blue;
-        padding: 0.8rem 3rem;
+        padding: 0.8rem 2rem;
         font-size: 1.5rem;
         border-radius: 0.5rem;
         color: $white;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
         text-transform: uppercase;
         letter-spacing: 0.1rem;
         font-weight: bold;
@@ -317,6 +347,10 @@
             color: $white;
         }
     }
+}
+
+.copyright {
+    color: $color-blue;
 }
 
 #mistakeFirstName {
