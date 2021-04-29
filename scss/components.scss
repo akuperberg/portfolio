@@ -1,0 +1,111 @@
+@mixin headerStyles {
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: $ebony;
+    @media only screen and (max-width: 600px) {
+        display: inline-block;
+    }
+}
+
+@mixin headerWords {
+    color: $color-blue;
+    font-weight: bold;
+}
+
+@mixin languages {
+    font-size: 1.5rem;
+    &:active {
+        background-color: $background-grey;
+        color: $ebony;
+    }
+}
+
+@mixin languages-hover {
+    color: $section-red;
+    text-decoration: none;
+}
+
+@mixin who {
+    border-top: 0.5rem $color-blue solid;
+    border-bottom: 0.5rem $color-blue solid;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    color: $color-blue;
+    font-weight: bold;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    @media only screen and (max-width: 1400px) {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@mixin who-p {
+    margin-top: 2.5rem;
+    line-height: 150%;
+    font-size: 2.2rem;
+    color: $ebony;
+}
+
+@mixin headerSecondary {
+    font-size: 6rem;
+    color: $section-red;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    @media only screen and (max-width: 600px) {
+        font-size: 4rem;
+    }
+}
+
+@mixin iconSpanStyle {
+    font-size: 2rem;
+    margin-left: 1rem;
+    color: $ebony;
+    display: block;
+    &:hover {
+        color: $section-red;
+    }
+}
+
+@mixin a-contacts {
+    display: block;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    margin-left: 5rem;
+    &:hover {
+        text-decoration: none;
+    }
+    @media only screen and (max-width: 600px) {
+        margin-left: 2rem;
+    }
+}
+
+@mixin button {
+    background-color: $section-red;
+    border: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 3rem;
+    letter-spacing: 0.1rem;
+    &:hover {
+        background-color: #570000;
+    }
+}
+
+@mixin mistakes {
+    color: $color-blue;
+    font-weight: bold;
+}
+
+$tobacco-light: #f5f7fa;
+$tobacco-dark: #b8c6db;
+$dark-red: #750000;
+$section-red: #a30000;
+$color-blue: #00a3a3;
+$dark-blue: #0088a3;
+$color-black: black;
+$background-grey: #e1e6ee;
+$ebony: #1e272c;
+$white: #f0f0f0;

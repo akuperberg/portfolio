@@ -1,0 +1,18 @@
+@use 'components.scss' as *;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+.body {
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    background-color: rgba($background-grey, 0.5);
+    max-width: 100%;
+    overflow-x: hidden;
+}
